@@ -77,45 +77,31 @@ input5.config(yscrollcommand=scroll.set)
 #BOTON----------------------------------------------------------------
 def funcion1():
     input5.delete(0.0,END)
-    #user=float(input1.get())
-    """
-    lenn=strlen(user*user)
-    i=0
-    while i<10:
-        echo "X$i  =   "
-        echo user
+    
+    x=float(input1.get())
+    sw=0
+    i=1
+    while True:
+        n=x**2
+        cant = int(len(str(n)))
+        d=(cant-4)/2
+        x=n%(10**(d+4))
+        x=x/(10**d)
+        m=x/10000.00
+        print (m,"float")
+        print (i,".- ",m)
+        if m==sw:
+            break
+        else:
+            if i==1:
+                sw=m
+            i=i+1
+            n=x
+            continue
+    print ('periodo= ',i)
 
-        Nlen=strlen(user*user)
-        cont=0
-        echo "X$i  ^2=   "
-        j=0°
-        while j<lenn:
-            print("0")
-            cont+=1
-            j+=1
-        
-        echo user=user*user
-        
-        
-        num=2
-        
-        num2=i+1
-        echo "X$num2  =   "
-        echo user=substr(user, num-cont, -2)
-        
-      
-        echo "u$num2  =   "
-        echo "0,"
-        echo user
-        i+=1
-    """
-
-
-
-
-
-
-    input5.insert(END,"funcion 1, aun en proceso...")
+    input4T.set(i)
+    input5.insert(END,"El periodo es "+str(i))
 #------------------------------------------------------------------------------------------    
 
 def funcion2():
@@ -235,17 +221,24 @@ var a=50
 var m=100   // PERIODO 2
 var c=16
 
-
 var Xo=0
 var a=7
 var m=10000      //PERIODO 100
 var c=501
-
 
 var Xo=2.0
 var a=6.0
 var m=1000.0      //PERIODO 126
 var c=8.0
 
+METDO 3
+Xo=17
+a=3
+m=100
+
+METDO 4
+Xo=7
+a=5
+m=64
 """
 
